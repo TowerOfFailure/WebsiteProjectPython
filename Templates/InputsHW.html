@@ -1,0 +1,23 @@
+{% extends 'bootstrap/base.html'%}
+
+{% block title %}
+	Let's see your MBI
+{% endblock %}
+
+{% block body%}
+	<form action="./" method="POST">
+	<div>
+		<label for="ex2">Height (cm) :</label>
+		<input id="ex2" type="float" name="height" required>
+	</div>
+	<div>
+		<label for="ex2">Weight (kg) :</label>
+		<input id="ex2" type="float" name="weight" required>
+	</div>
+	<input type="submit" value="See my MBI">
+	</form>
+	<button class="btn btn-outline-secondary" type="button" id="button-addon1">
+		<a href="../">Go back</a>
+	</button>
+
+{% endblock %}

@@ -1,0 +1,27 @@
+{% extends 'bootstrap/base.html'%}
+
+{% block title %}
+	Hello {{name | upper}}
+{% endblock %}
+
+{% block body%}
+	<h1>Hello {{name | upper}}</h1>
+	<form action="/" method="POST">
+	<div>
+		<label for="ex2">Name :</label>
+		<input id="ex2" type="text" name="indiv_name">
+	</div>
+	<input type="submit" value="go there">
+	</form>
+	<button class="btn btn-outline-secondary" type="button" id="button-addon1">
+		<a href="/infos1">MBI for health</a>
+	</button>
+	<button class="btn btn-outline-secondary" type="button" id="button-addon1">
+		<a href="/infos2">Estimation of MBI without height or weight (1)</a>
+	</button>
+
+	<button class="btn btn-outline-secondary" type="button" id="button-addon1">
+		<a href="/infos3">Estimation of MBI without height or weight (2)</a>
+	</button>
+
+{% endblock %}

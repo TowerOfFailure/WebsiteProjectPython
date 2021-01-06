@@ -1,0 +1,112 @@
+{% extends 'bootstrap/base.html'%}
+
+{% block title %}
+	Let's see What the AI thinks
+{% endblock %}
+
+{% block body%}
+	<form action="./" method="POST">
+	<div>
+		<label>Gender</label>
+		<select name="Gender" required>
+			<option value="Male">Male</option>
+			<option value="Female">Female</option>
+		</select>
+	</div>
+	<div>
+		<label for="ex2">Age :</label>
+		<input id="ex2" type="number" name="Age" required>
+	</div>
+	<div>
+		<label for="ex2">Family history with overweight? </label>
+		<input id="ex2" type="checkbox" name="History">
+	</div>
+
+	<div>
+		<label for="ex2">Do you eat high caloric food frequently? </label>
+		<input id="ex2" type="checkbox" name="Calory">
+	</div>
+	<div>
+		<label for="ex2">Do you smoke? </label>
+		<input id="ex2" type="checkbox" name="Smoke">
+	</div>
+	<div>
+		<label for="ex2">Do you monitor what you eat? </label>
+		<input id="ex2" type="checkbox" name="Monitoring">
+	</div>
+	<div>
+		<label>How many meals are you eating daily?</label>
+		<select name="Nmeals" required>
+			<option value=1>One or two</option>
+			<option value=3>Three</option>
+			<option value=4>More than 3</option>
+		</select>
+	</div>
+	<div>
+		<label>How often do you drink alcohol?</label>
+		<select name="Alcohol" required>
+			<option value="no">No</option>
+			<option value="Sometimes">Sometimes</option>
+			<option value="Frequently">Frequently</option>
+			<option value="Always">Always</option>
+		</select>
+	</div>
+	<div>
+		<label>Which transportation do you usually use?</label>
+		<select name="Transportation" required>
+			<option value="Automobile">Automobile</option>
+			<option value="Motorbike">Motorbike</option>
+			<option value="Bike">Bike</option>
+			<option value="Walking">Walking</option>
+			<option value="Public_transportation">Public transportation</option>
+		</select>
+	</div>
+	<div>
+		<label>Do you eat in between meals?</label>
+		<select name="Picking" required>
+			<option value="no">No</option>
+			<option value="Sometimes">Sometimes</option>
+			<option value="Frequently">Frequently</option>
+			<option value="Always">Always</option>
+		</select>
+	</div>
+	<div>
+		<label>How much water do you drink daily?</label>
+		<select name="Water" required>
+			<option value=1>Less than one liter</option>
+			<option value=2>One to two liters</option>
+			<option value=3>More than two liters</option>
+		</select>
+	</div>
+	<div>
+		<label>Do you eat vegetables every meal?</label>
+		<select name="Veggies" required>
+			<option value=1>Never</option>
+			<option value=2>Sometimes</option>
+			<option value=3>Always</option>
+		</select>
+	</div>
+	<div>
+		<label>How often do you have physical activity every week?</label>
+		<select name="Activity" required>
+			<option value=0>None</option>
+			<option value=1>1-2 days</option>
+			<option value=2>2-4 days</option>
+			<option value=3>4-7 days</option>
+		</select>
+	</div>
+	<div>
+		<label>How much time do you use technological devices (cellphones, videogames, computers, television...) daily?</label>
+		<select name="Tech" required>
+			<option value=0>0-2 hours</option>
+			<option value=1>3-5 hours</option>
+			<option value=2>More than 5 hours</option>
+		</select>
+	</div>
+	<input type="submit" value="See my estimate">
+	</form>
+	<button class="btn btn-outline-secondary" type="button" id="button-addon1">
+		<a href="../">Go back</a>
+	</button>
+
+{% endblock %}
